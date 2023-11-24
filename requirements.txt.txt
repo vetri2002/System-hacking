@@ -1,0 +1,4 @@
+kali-linux
+digi-spark arduino board
+ducky script to arduino conventor
+testing pc
